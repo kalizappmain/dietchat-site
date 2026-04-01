@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ChatDiet — Nutrição inteligente no seu WhatsApp. IA personalizada para transformar sua alimentação com praticidade."/>
+  <meta name="robots" content="index, follow"/>
+  <title>ChatDiet | Nutrição Inteligente no seu WhatsApp</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://chatdiet.vercel.app/"/>
+  <meta property="og:title" content="ChatDiet | Nutrição Inteligente no seu WhatsApp"/>
+  <meta property="og:description" content="Transforme sua alimentação com praticidade. O ChatDiet une tecnologia e IA para criar planos personalizados diretamente no WhatsApp."/>
+  <meta property="og:image" content="https://chatdiet.vercel.app/og-image.png"/>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#006d4a",
+            "primary-dim": "#005f40",
+            "primary-container": "#69f6b8",
+            "on-primary": "#e6ffee",
+            "on-primary-container": "#005a3c",
+            "surface": "#f7f9fb",
+            "surface-container": "#eaeff2",
+            "surface-container-low": "#f0f4f7",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e3e9ed",
+            "surface-container-highest": "#dce4e8",
+            "surface-variant": "#dce4e8",
+            "on-surface": "#2c3437",
+            "on-surface-variant": "#596064",
+            "outline-variant": "#acb3b7",
+            "tertiary": "#865400",
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-nav {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    .asymmetric-shape {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 glass-nav border-b border-outline-variant/10">
+  <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+    <a href="/" class="text-2xl font-bold tracking-tighter text-emerald-800 font-headline">ChatDiet</a>
+    <div class="hidden md:flex space-x-8 items-center">
+      <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#recursos">Recursos</a>
+      <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#como-funciona">Como Funciona</a>
+      <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#contato">Contato</a>
+      <a href="privacy.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Privacidade</a>
+    </div>
+    <a href="#contato" class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold text-sm hover:bg-primary-dim transition-all active:scale-95">
+      Começar Agora
+    </a>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="relative pt-32 pb-32 overflow-hidden bg-surface-container-low asymmetric-shape">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="z-10">
+        <div class="inline-block px-4 py-1 mb-6 rounded-full bg-primary-container/30 text-primary font-bold text-xs tracking-widest uppercase font-label">
+          Nutrição Clínica de Próxima Geração
+        </div>
+        <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface leading-tight mb-6 tracking-tighter">
+          Nutrição Inteligente no seu <span class="text-primary">WhatsApp</span>
+        </h1>
+        <p class="text-lg text-on-surface-variant mb-10 max-w-lg leading-relaxed">
+          Transforme sua alimentação com praticidade. O ChatDiet une tecnologia e IA para criar planos personalizados diretamente onde você já está.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contato" class="bg-primary text-on-primary text-center text-lg font-bold py-4 px-10 rounded-xl shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
+            Começar Agora
+          </a>
+          <a href="#como-funciona" class="flex items-center justify-center gap-2 text-on-surface font-bold py-4 px-8 rounded-xl border-2 border-outline-variant/20 hover:bg-surface-container-high transition-colors">
+            <span class="material-symbols-outlined">play_circle</span>
+            Ver como funciona
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+        <div class="relative z-10 bg-surface-container-lowest p-4 rounded-[2.5rem] shadow-2xl border border-outline-variant/10">
+          <!-- WhatsApp chat mockup -->
+          <div class="max-w-[300px] mx-auto bg-slate-900 rounded-[2rem] p-2 shadow-xl border-4 border-slate-800">
+            <div class="bg-emerald-800 p-3 rounded-t-2xl flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-lg">smart_toy</span>
+              </div>
+              <div>
+                <p class="text-white text-xs font-bold">ChatDiet Coach</p>
+                <p class="text-emerald-300 text-[10px]">online</p>
+              </div>
+            </div>
+            <div class="h-[380px] bg-[#e5ddd5] p-3 flex flex-col gap-3 overflow-hidden font-body text-sm">
+              <div class="bg-white p-3 rounded-lg rounded-tl-none self-start max-w-[85%] shadow-sm text-xs">
+                Olá! Como foi seu almoço hoje? 🥗
+              </div>
+              <div class="bg-[#dcf8c6] p-3 rounded-lg rounded-tr-none self-end max-w-[85%] shadow-sm text-xs">
+                Peito de frango grelhado, salada de folhas e 2 colheres de arroz integral.
+              </div>
+              <div class="bg-white p-3 rounded-lg rounded-tl-none self-start max-w-[85%] shadow-sm text-xs">
+                Ótima escolha! Calculei 420 kcal. Você ainda tem 850 kcal para o resto do dia. Quer uma sugestão de lanche? 🍎
+              </div>
+              <div class="bg-[#dcf8c6] p-3 rounded-lg rounded-tr-none self-end max-w-[85%] shadow-sm text-xs">
+                Sim, por favor! 😊
+              </div>
+              <div class="bg-white p-3 rounded-lg rounded-tl-none self-start max-w-[85%] shadow-sm text-xs">
+                Que tal 1 banana média + 10 castanhas? São ~180 kcal, ótimas fontes de potássio e gorduras boas. 🍌
+              </div>
+            </div>
+            <div class="bg-white p-2 rounded-b-2xl flex gap-2 items-center">
+              <div class="flex-1 bg-surface-container h-7 rounded-full"></div>
+              <div class="w-7 h-7 rounded-full bg-emerald-600 flex items-center justify-center text-white">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">send</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px]">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+              </div>
+              <div>
+                <p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-tighter">Meta Diária</p>
+                <p class="text-lg font-extrabold text-on-surface font-headline">85% Completa</p>
+              </div>
+            </div>
+            <div class="w-full bg-surface-variant h-2 rounded-full overflow-hidden">
+              <div class="bg-primary h-full w-[85%]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-headline font-bold mb-4 tracking-tight">Simples como uma mensagem</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Três passos para uma vida mais saudável e equilibrada.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+        <div class="w-14 h-14 bg-primary text-on-primary rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+          <span class="material-symbols-outlined text-3xl">person_add</span>
+        </div>
+        <h3 class="text-2xl font-headline font-bold mb-4">1. Cadastro Rápido</h3>
+        <p class="text-on-surface-variant leading-relaxed">Defina seus objetivos, restrições e preferências em menos de 2 minutos.</p>
+      </div>
+      <div class="bg-surface-container-highest p-10 rounded-xl border border-outline-variant/5 relative overflow-hidden">
+        <div class="w-14 h-14 bg-primary text-on-primary rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+          <span class="material-symbols-outlined text-3xl">chat</span>
+        </div>
+        <h3 class="text-2xl font-headline font-bold mb-4">2. Registro via WhatsApp</h3>
+        <p class="text-on-surface-variant leading-relaxed">Mande uma foto do seu prato ou descreva sua refeição diretamente no chat.</p>
+      </div>
+      <div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+        <div class="w-14 h-14 bg-primary text-on-primary rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+          <span class="material-symbols-outlined text-3xl">query_stats</span>
+        </div>
+        <h3 class="text-2xl font-headline font-bold mb-4">3. Acompanhamento com IA</h3>
+        <p class="text-on-surface-variant leading-relaxed">Nossa IA processa os dados e ajusta seu plano nutricional em tempo real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECURSOS -->
+  <section id="recursos" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-6">
+        <div class="max-w-xl">
+          <h2 class="text-4xl md:text-5xl font-headline font-bold mb-6 tracking-tight">Benefícios que transformam</h2>
+          <p class="text-on-surface-variant text-lg">Ciência da nutrição aplicada com a simplicidade da inteligência artificial.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">restaurant</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Dietas Personalizadas</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed mb-6">Nada de fórmulas prontas. Seu plano é construído com base na sua rotina e objetivos.</p>
+          <div class="h-1 w-full bg-surface-variant rounded-full overflow-hidden">
+            <div class="h-full bg-primary w-1/3 group-hover:w-full transition-all duration-700"></div>
+          </div>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">calculate</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Cálculo Automático</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed mb-6">Esqueça as tabelas complexas. Nossa IA calcula calorias e macros a partir de fotos ou texto.</p>
+          <div class="h-1 w-full bg-surface-variant rounded-full overflow-hidden">
+            <div class="h-full bg-primary w-1/2 group-hover:w-full transition-all duration-700"></div>
+          </div>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">trending_up</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Gráficos de Evolução</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed mb-6">Visualize seu progresso com clareza. Relatórios semanais detalhados no seu celular.</p>
+          <div class="h-1 w-full bg-surface-variant rounded-full overflow-hidden">
+            <div class="h-full bg-primary w-2/3 group-hover:w-full transition-all duration-700"></div>
+          </div>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Análise de Fotos</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed mb-6">Envie uma foto do prato e nossa IA identifica automaticamente os nutrientes presentes.</p>
+          <div class="h-1 w-full bg-surface-variant rounded-full overflow-hidden">
+            <div class="h-full bg-primary w-1/4 group-hover:w-full transition-all duration-700"></div>
+          </div>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">notifications_active</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Lembretes Inteligentes</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed mb-6">Alertas de hidratação e horários de refeição personalizados para a sua rotina.</p>
+          <div class="h-1 w-full bg-surface-variant rounded-full overflow-hidden">
+            <div class="h-full bg-primary w-3/4 group-hover:w-full transition-all duration-700"></div>
+          </div>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">lock</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Privacidade Garantida</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed mb-6">Seus dados de saúde são criptografados e nunca compartilhados sem seu consentimento.</p>
+          <div class="h-1 w-full bg-surface-variant rounded-full overflow-hidden">
+            <div class="h-full bg-primary w-full transition-all duration-700"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-24 max-w-4xl mx-auto px-6">
+    <div class="bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] border border-outline-variant/10 shadow-sm">
+      <h3 class="text-3xl font-headline font-bold mb-2 text-center">Fale com a Equipe</h3>
+      <p class="text-on-surface-variant text-center mb-8">Dúvidas, parcerias ou suporte? Estamos aqui.</p>
+      <form action="#" class="space-y-6" onsubmit="return false;">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider font-label">Nome</label>
+            <input class="w-full bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary py-3 px-4 transition-all" placeholder="Seu nome completo" type="text"/>
+          </div>
+          <div class="space-y-2">
+            <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider font-label">E-mail</label>
+            <input class="w-full bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary py-3 px-4 transition-all" placeholder="seu@email.com" type="email"/>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider font-label">Mensagem</label>
+          <textarea class="w-full bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary py-3 px-4 transition-all" placeholder="Conte-nos sobre seus objetivos ou dúvidas" rows="4"></textarea>
+        </div>
+        <button class="w-full bg-primary text-on-primary font-bold py-4 rounded-xl hover:bg-primary-dim transition-colors shadow-lg shadow-primary/10">
+          Enviar Mensagem
+        </button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-50 border-t border-slate-200/50">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+    <div class="col-span-1 md:col-span-1">
+      <span class="text-lg font-black text-slate-900 mb-4 block font-headline">ChatDiet</span>
+      <p class="text-xs leading-relaxed text-slate-500 mb-6">A evolução da nutrição na palma da sua mão. Ciência e IA unidas para o seu bem-estar.</p>
+    </div>
+    <div>
+      <h6 class="font-headline font-bold text-sm mb-6 uppercase tracking-widest text-emerald-800">Produto</h6>
+      <ul class="space-y-4 text-xs leading-relaxed">
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="#recursos">Funcionalidades</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="#como-funciona">Como funciona</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="font-headline font-bold text-sm mb-6 uppercase tracking-widest text-emerald-800">Suporte</h6>
+      <ul class="space-y-4 text-xs leading-relaxed">
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="#contato">Contate-nos</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="deletion.html">Exclusão de Dados</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="font-headline font-bold text-sm mb-6 uppercase tracking-widest text-emerald-800">Legal</h6>
+      <ul class="space-y-4 text-xs leading-relaxed">
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="privacy.html">Política de Privacidade</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="terms.html">Termos de Serviço</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="deletion.html">Exclusão de Dados (LGPD/GDPR)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-xs text-slate-500">© 2025 ChatDiet. Todos os direitos reservados.</p>
+    <p class="text-xs text-slate-400">contato@chatdiet.app</p>
+  </div>
+</footer>
+
+</body>
+</html>
