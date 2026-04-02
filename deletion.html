@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Solicite a exclusão dos seus dados do ChatDiet. Processo simples conforme a LGPD."/>
+  <meta name="robots" content="index, follow"/>
+  <title>Exclusão de Dados | ChatDiet</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5a8a6a", "primary-dark": "#3d6b52", "primary-bg": "#eef5f1",
+            "surface": "#f8faf9", "surface-card": "#ffffff",
+            "on-surface": "#1e2d24", "on-muted": "#4a6355", "border-soft": "#c8ddd1",
+          },
+          fontFamily: { "headline": ["Manrope"], "body": ["Inter"] },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+    code { font-size:12px; background:#eef5f1; padding:1px 6px; border-radius:4px; font-family:monospace; color:#3d6b52; }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+
+<nav class="w-full bg-white border-b border-border-soft">
+  <div class="flex justify-between items-center px-6 py-3 max-w-4xl mx-auto">
+    <a href="/"><img src="logo.png" alt="ChatDiet" class="h-9 w-auto"/></a>
+    <a href="/" class="flex items-center gap-1 text-sm text-on-muted hover:text-primary-dark transition-colors">
+      <span class="material-symbols-outlined text-base">arrow_back</span>Voltar ao site
+    </a>
+  </div>
+</nav>
+
+<header class="bg-primary-bg py-14 border-b border-border-soft">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="inline-block px-4 py-1 mb-4 rounded-full bg-red-100 text-red-700 font-bold text-xs tracking-widest uppercase">LGPD · Direito ao Esquecimento · Meta Policy</div>
+    <h1 class="text-4xl md:text-5xl font-headline font-bold mb-3 tracking-tight">Exclusão de Dados</h1>
+    <p class="text-on-muted max-w-2xl text-sm leading-relaxed">Você tem o direito de solicitar a exclusão completa dos seus dados pessoais armazenados pelo ChatDiet, conforme a LGPD (Lei 13.709/2018) e as políticas da plataforma Meta.</p>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto px-6 py-14 space-y-12">
+
+  <section>
+    <h2 class="text-2xl font-headline font-bold mb-6">O que será excluído</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-surface-card rounded-xl p-5 border border-border-soft flex gap-3 items-start">
+        <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-red-600 text-sm">person_off</span></div>
+        <div><p class="font-bold text-sm mb-1">Dados de identificação</p><p class="text-xs text-on-muted">Nome e número de WhatsApp</p></div>
+      </div>
+      <div class="bg-surface-card rounded-xl p-5 border border-border-soft flex gap-3 items-start">
+        <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-red-600 text-sm">restaurant</span></div>
+        <div><p class="font-bold text-sm mb-1">Registros alimentares</p><p class="text-xs text-on-muted">Histórico de refeições, fotos e metas</p></div>
+      </div>
+      <div class="bg-surface-card rounded-xl p-5 border border-border-soft flex gap-3 items-start">
+        <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-red-600 text-sm">chat</span></div>
+        <div><p class="font-bold text-sm mb-1">Histórico de conversas</p><p class="text-xs text-on-muted">Todas as mensagens trocadas com o assistente</p></div>
+      </div>
+      <div class="bg-surface-card rounded-xl p-5 border border-border-soft flex gap-3 items-start">
+        <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-red-600 text-sm">settings</span></div>
+        <div><p class="font-bold text-sm mb-1">Preferências e configurações</p><p class="text-xs text-on-muted">Metas e configurações do serviço</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-headline font-bold mb-8">Como solicitar a exclusão</h2>
+
+    <div class="bg-surface-card rounded-2xl border border-border-soft p-8 mb-5">
+      <div class="flex items-start gap-4 mb-6">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shrink-0 font-bold text-sm">1</div>
+        <div>
+          <h3 class="font-headline font-bold text-lg mb-1">Por e-mail (recomendado)</h3>
+          <p class="text-on-muted text-sm">Resposta em até 48 horas. Exclusão completa em até 30 dias.</p>
+        </div>
+      </div>
+      <div class="ml-14 space-y-4">
+        <div class="flex gap-3 items-start">
+          <div class="w-9 h-9 rounded-full bg-primary-bg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary-dark text-base">mail</span></div>
+          <div>
+            <p class="font-bold text-sm">Envie para</p>
+            <a href="mailto:privacidade@dietchat.com.br?subject=Solicitação%20de%20Exclusão%20de%20Dados&body=Olá%2C%0A%0ASolicito%20a%20exclusão%20de%20todos%20os%20meus%20dados%20no%20ChatDiet.%0A%0ANumero%20WhatsApp%3A%20%5Bseu%20numero%5D%0A%0AAtenciosamente." class="text-primary-dark font-bold hover:underline">privacidade@dietchat.com.br</a>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="w-9 h-9 rounded-full bg-primary-bg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary-dark text-base">edit_note</span></div>
+          <div>
+            <p class="font-bold text-sm">Inclua no e-mail</p>
+            <ul class="text-sm text-on-muted mt-1 space-y-1">
+              <li>• Assunto: <em>"Solicitação de Exclusão de Dados"</em></li>
+              <li>• Seu número de WhatsApp cadastrado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 ml-14">
+        <a href="mailto:privacidade@dietchat.com.br?subject=Solicitação%20de%20Exclusão%20de%20Dados&body=Olá%2C%0A%0ASolicito%20a%20exclusão%20de%20todos%20os%20meus%20dados%20no%20ChatDiet.%0A%0ANumero%20WhatsApp%3A%20%5Bseu%20numero%5D%0A%0AAtenciosamente."
+           class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-primary-dark transition-all">
+          <span class="material-symbols-outlined text-sm">send</span>Enviar solicitação por e-mail
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-surface-card rounded-2xl border border-border-soft p-8">
+      <div class="flex items-start gap-4 mb-6">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shrink-0 font-bold text-sm">2</div>
+        <div>
+          <h3 class="font-headline font-bold text-lg mb-1">Pelo próprio WhatsApp</h3>
+          <p class="text-on-muted text-sm">Envie a mensagem abaixo diretamente para o número do ChatDiet.</p>
+        </div>
+      </div>
+      <div class="ml-14">
+        <div class="bg-primary-bg rounded-xl p-4 font-mono text-sm text-primary-dark border border-border-soft">
+          EXCLUIR MEUS DADOS
+        </div>
+        <p class="text-xs text-on-muted mt-3">Nosso assistente confirmará o recebimento e iniciará o processo de exclusão em até 30 dias.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-green-50 border border-green-200 rounded-2xl p-8">
+    <div class="flex gap-4 items-start">
+      <span class="material-symbols-outlined text-green-700 text-3xl shrink-0" style="font-variation-settings:'FILL' 1;">verified</span>
+      <div>
+        <h3 class="font-headline font-bold text-lg text-green-900 mb-2">Confirmação de exclusão</h3>
+        <p class="text-green-800 text-sm leading-relaxed">Você receberá confirmação por e-mail com código de rastreamento. Dados anonimizados e agregados (sem possibilidade de identificação) podem ser mantidos para fins estatísticos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-headline font-bold mb-4">Base legal</h2>
+    <div class="flex flex-wrap gap-3">
+      <span class="bg-primary-bg px-4 py-2 rounded-full text-xs font-bold text-primary-dark">LGPD — Lei 13.709/2018</span>
+      <span class="bg-primary-bg px-4 py-2 rounded-full text-xs font-bold text-primary-dark">GDPR (União Europeia)</span>
+      <span class="bg-primary-bg px-4 py-2 rounded-full text-xs font-bold text-primary-dark">Meta Platform Terms (fev/2025)</span>
+      <span class="bg-primary-bg px-4 py-2 rounded-full text-xs font-bold text-primary-dark">Meta Developer Policies</span>
+    </div>
+  </section>
+
+  <div class="flex flex-wrap gap-4 pt-4 border-t border-border-soft">
+    <a href="privacy.html" class="inline-flex items-center gap-2 border border-border-soft text-on-surface px-6 py-3 rounded-xl font-bold text-sm hover:bg-primary-bg transition-all">
+      <span class="material-symbols-outlined text-sm">shield</span>Política de Privacidade
+    </a>
+    <a href="/" class="inline-flex items-center gap-2 border border-border-soft text-on-surface px-6 py-3 rounded-xl font-bold text-sm hover:bg-primary-bg transition-all">
+      <span class="material-symbols-outlined text-sm">home</span>Página Inicial
+    </a>
+  </div>
+</main>
+
+<footer class="bg-primary-bg border-t border-border-soft py-7 text-center">
+  <p class="text-xs text-on-muted">© 2025 Sanchez Store Ltda — ChatDiet | CNPJ 54.069.938/0001-97 | <a href="mailto:privacidade@dietchat.com.br" class="hover:text-primary-dark">privacidade@dietchat.com.br</a></p>
+</footer>
+</body>
+</html>
