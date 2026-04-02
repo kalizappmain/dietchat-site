@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ChatDiet — Orientação nutricional inteligente via WhatsApp. Registre refeições, acompanhe sua alimentação e receba sugestões personalizadas."/>
+  <meta name="robots" content="index, follow"/>
+  <title>ChatDiet | Orientação Nutricional via WhatsApp</title>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.dietchat.com.br/"/>
+  <meta property="og:title" content="ChatDiet | Orientação Nutricional via WhatsApp"/>
+  <meta property="og:description" content="Registre suas refeições e receba orientações nutricionais personalizadas diretamente no WhatsApp."/>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#006d4a",
+            "primary-dim": "#005f40",
+            "primary-container": "#69f6b8",
+            "on-primary": "#e6ffee",
+            "surface": "#f7f9fb",
+            "surface-container": "#eaeff2",
+            "surface-container-low": "#f0f4f7",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e3e9ed",
+            "surface-container-highest": "#dce4e8",
+            "surface-variant": "#dce4e8",
+            "on-surface": "#2c3437",
+            "on-surface-variant": "#596064",
+            "outline-variant": "#acb3b7",
+          },
+          fontFamily: { "headline": ["Manrope"], "body": ["Inter"], "label": ["Inter"] },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    .asymmetric-shape { clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 glass-nav border-b border-outline-variant/10">
+  <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+    <a href="/" class="text-2xl font-bold tracking-tighter text-emerald-800 font-headline">ChatDiet</a>
+    <div class="hidden md:flex space-x-8 items-center">
+      <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#como-funciona">Como Funciona</a>
+      <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#recursos">Recursos</a>
+      <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#consentimento">Consentimento</a>
+      <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#contato">Contato</a>
+      <a href="privacy.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Privacidade</a>
+    </div>
+    <a href="#contato" class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold text-sm hover:bg-primary-dim transition-all active:scale-95">
+      Começar Agora
+    </a>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="relative pt-32 pb-32 overflow-hidden bg-surface-container-low asymmetric-shape">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="z-10">
+        <div class="inline-block px-4 py-1 mb-6 rounded-full bg-primary-container/30 text-primary font-bold text-xs tracking-widest uppercase font-label">
+          Educação Alimentar com IA
+        </div>
+        <h1 class="text-5xl md:text-6xl font-headline font-extrabold text-on-surface leading-tight mb-6 tracking-tighter">
+          Orientação Nutricional no seu <span class="text-primary">WhatsApp</span>
+        </h1>
+        <p class="text-lg text-on-surface-variant mb-4 max-w-lg leading-relaxed">
+          Registre suas refeições, acompanhe suas metas alimentares e receba orientações de educação nutricional — tudo pelo WhatsApp, quando e como você quiser.
+        </p>
+        <p class="text-sm text-on-surface-variant mb-10 max-w-lg leading-relaxed border-l-4 border-primary/30 pl-4">
+          <strong>Você sempre inicia o contato.</strong> O ChatDiet nunca envia mensagens sem que você solicite primeiro. Nosso serviço é ativado somente após seu pedido explícito.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contato" class="bg-primary text-on-primary text-center text-lg font-bold py-4 px-10 rounded-xl shadow-lg hover:bg-primary-dim transition-all active:scale-95">
+            Quero Começar
+          </a>
+          <a href="#como-funciona" class="flex items-center justify-center gap-2 text-on-surface font-bold py-4 px-8 rounded-xl border-2 border-outline-variant/20 hover:bg-surface-container-high transition-colors">
+            <span class="material-symbols-outlined">play_circle</span>
+            Como funciona
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+        <div class="relative z-10 bg-surface-container-lowest p-4 rounded-[2.5rem] shadow-2xl border border-outline-variant/10">
+          <div class="max-w-[300px] mx-auto bg-slate-900 rounded-[2rem] p-2 shadow-xl border-4 border-slate-800">
+            <div class="bg-emerald-800 p-3 rounded-t-2xl flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-lg">smart_toy</span>
+              </div>
+              <div>
+                <p class="text-white text-xs font-bold">ChatDiet</p>
+                <p class="text-emerald-300 text-[10px]">Assistente Automatizado</p>
+              </div>
+            </div>
+            <div class="h-[360px] bg-[#e5ddd5] p-3 flex flex-col gap-3 overflow-hidden font-body text-sm">
+              <div class="bg-white p-3 rounded-lg rounded-tl-none self-start max-w-[85%] shadow-sm text-xs">
+                Olá! Sou o assistente ChatDiet 🤖. Como posso ajudar com seu acompanhamento alimentar hoje?
+              </div>
+              <div class="bg-[#dcf8c6] p-3 rounded-lg rounded-tr-none self-end max-w-[85%] shadow-sm text-xs">
+                Quero registrar meu almoço: frango grelhado, salada e arroz integral.
+              </div>
+              <div class="bg-white p-3 rounded-lg rounded-tl-none self-start max-w-[85%] shadow-sm text-xs">
+                Registrado! Estimativa: 420 kcal. Você tem aproximadamente 850 kcal restantes para hoje com base na sua meta. Quer uma sugestão de lanche? 🍎
+              </div>
+              <div class="bg-[#dcf8c6] p-3 rounded-lg rounded-tr-none self-end max-w-[85%] shadow-sm text-xs">
+                Sim, por favor!
+              </div>
+              <div class="bg-white p-3 rounded-lg rounded-tl-none self-start max-w-[85%] shadow-sm text-xs">
+                Sugestão: 1 banana + 10 castanhas (~180 kcal). Boas fontes de potássio e gorduras saudáveis. 🍌
+              </div>
+            </div>
+            <div class="bg-white p-2 rounded-b-2xl flex gap-2 items-center">
+              <div class="flex-1 bg-surface-container h-7 rounded-full"></div>
+              <div class="w-7 h-7 rounded-full bg-emerald-600 flex items-center justify-center text-white">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">send</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-headline font-bold mb-4 tracking-tight">Como o ChatDiet funciona</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Simples, transparente e sempre no seu controle.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+        <div class="w-14 h-14 bg-primary text-on-primary rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+          <span class="material-symbols-outlined text-3xl">touch_app</span>
+        </div>
+        <h3 class="text-2xl font-headline font-bold mb-4">1. Você nos contata</h3>
+        <p class="text-on-surface-variant leading-relaxed">O serviço começa <strong>somente quando você envia a primeira mensagem</strong>. Nunca fazemos contato não solicitado. Você tem controle total.</p>
+      </div>
+      <div class="bg-surface-container-highest p-10 rounded-xl border border-outline-variant/5">
+        <div class="w-14 h-14 bg-primary text-on-primary rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+          <span class="material-symbols-outlined text-3xl">chat</span>
+        </div>
+        <h3 class="text-2xl font-headline font-bold mb-4">2. Registre suas refeições</h3>
+        <p class="text-on-surface-variant leading-relaxed">Descreva o que comeu ou envie uma foto. Nosso assistente automatizado processa as informações e estima os valores nutricionais.</p>
+      </div>
+      <div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+        <div class="w-14 h-14 bg-primary text-on-primary rounded-xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+          <span class="material-symbols-outlined text-3xl">query_stats</span>
+        </div>
+        <h3 class="text-2xl font-headline font-bold mb-4">3. Acompanhe seu progresso</h3>
+        <p class="text-on-surface-variant leading-relaxed">Receba orientações de educação alimentar baseadas no seu histórico. Pare quando quiser — basta parar de responder.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSENTIMENTO E TRANSPARÊNCIA — seção crítica para Meta -->
+  <section id="consentimento" class="py-24 bg-emerald-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-headline font-bold mb-4 tracking-tight text-emerald-900">Transparência e Consentimento</h2>
+        <p class="text-emerald-800 max-w-2xl mx-auto">Sua privacidade e controle são prioridade. Veja como funciona nossa política de comunicação.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-8 rounded-2xl border border-emerald-100">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 mb-6">
+            <span class="material-symbols-outlined">check_circle</span>
+          </div>
+          <h4 class="text-lg font-headline font-bold mb-3 text-emerald-900">Opt-in obrigatório</h4>
+          <p class="text-sm text-emerald-800 leading-relaxed">O ChatDiet <strong>só envia mensagens após você iniciar o contato</strong>. Nenhuma mensagem é enviada sem sua solicitação prévia e explícita.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-emerald-100">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 mb-6">
+            <span class="material-symbols-outlined">smart_toy</span>
+          </div>
+          <h4 class="text-lg font-headline font-bold mb-3 text-emerald-900">Atendimento automatizado</h4>
+          <p class="text-sm text-emerald-800 leading-relaxed">Nosso serviço utiliza <strong>sistemas automatizados (chatbot)</strong> para processar suas mensagens e fornecer orientações. Você está sempre ciente de que interage com um sistema de IA.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-emerald-100">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 mb-6">
+            <span class="material-symbols-outlined">cancel</span>
+          </div>
+          <h4 class="text-lg font-headline font-bold mb-3 text-emerald-900">Cancele quando quiser</h4>
+          <p class="text-sm text-emerald-800 leading-relaxed">Para encerrar o serviço, basta enviar <strong>"SAIR"</strong> ou <strong>"PARAR"</strong> a qualquer momento. Você pode solicitar a exclusão de todos os seus dados pelo e-mail privacidade@dietchat.com.br.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-emerald-100">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 mb-6">
+            <span class="material-symbols-outlined">health_and_safety</span>
+          </div>
+          <h4 class="text-lg font-headline font-bold mb-3 text-emerald-900">Não substitui profissional</h4>
+          <p class="text-sm text-emerald-800 leading-relaxed">O ChatDiet oferece <strong>educação e orientação alimentar informativa</strong>. Não é um serviço médico ou de nutrição clínica. Consulte sempre um profissional de saúde habilitado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECURSOS -->
+  <section id="recursos" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-16">
+        <h2 class="text-4xl md:text-5xl font-headline font-bold mb-6 tracking-tight">O que o ChatDiet oferece</h2>
+        <p class="text-on-surface-variant text-lg max-w-2xl">Ferramentas de acompanhamento alimentar para apoiar seus hábitos de vida saudável.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">restaurant</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Registro de Refeições</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Anote o que comeu por texto ou foto. Nosso sistema estima automaticamente as informações nutricionais.</p>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">calculate</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Estimativa Nutricional</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Estimativas de calorias e macronutrientes baseadas em tabelas nutricionais de referência.</p>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">trending_up</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Acompanhamento de Metas</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Defina suas metas de consumo alimentar e acompanhe seu progresso ao longo do dia.</p>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Análise de Fotos</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Envie uma foto do prato para identificação e estimativa automática dos alimentos presentes.</p>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">notifications_active</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Lembretes Opcionais</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Ative lembretes de hidratação e refeições somente se desejar. Desative a qualquer momento com "SAIR".</p>
+        </div>
+        <div class="group bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+            <span class="material-symbols-outlined">lock</span>
+          </div>
+          <h4 class="text-xl font-headline font-bold mb-3">Seus Dados Protegidos</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Dados criptografados e nunca vendidos a terceiros. Solicite exclusão a qualquer momento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-24 max-w-4xl mx-auto px-6">
+    <div class="bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] border border-outline-variant/10 shadow-sm">
+      <h3 class="text-3xl font-headline font-bold mb-2 text-center">Entre em Contato</h3>
+      <p class="text-on-surface-variant text-center mb-8">Dúvidas ou suporte? Nossa equipe responde em até 1 dia útil.</p>
+      <form action="#" class="space-y-6" onsubmit="return false;">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider font-label">Nome</label>
+            <input class="w-full bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary py-3 px-4 transition-all" placeholder="Seu nome" type="text"/>
+          </div>
+          <div class="space-y-2">
+            <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider font-label">E-mail</label>
+            <input class="w-full bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary py-3 px-4 transition-all" placeholder="seu@email.com" type="email"/>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider font-label">Mensagem</label>
+          <textarea class="w-full bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary py-3 px-4 transition-all" placeholder="Como podemos ajudar?" rows="4"></textarea>
+        </div>
+        <button class="w-full bg-primary text-on-primary font-bold py-4 rounded-xl hover:bg-primary-dim transition-colors shadow-lg shadow-primary/10">
+          Enviar Mensagem
+        </button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-50 border-t border-slate-200/50">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+    <div class="col-span-1 md:col-span-2">
+      <span class="text-lg font-black text-slate-900 mb-3 block font-headline">ChatDiet</span>
+      <p class="text-xs leading-relaxed text-slate-500 mb-4">Orientação de educação alimentar via WhatsApp, com assistente automatizado. Não substitui consulta com nutricionista ou médico.</p>
+      <div class="text-xs text-slate-400 leading-relaxed space-y-1">
+        <p><strong class="text-slate-500">Sanchez Store Ltda</strong></p>
+        <p>CNPJ: 54.069.938/0001-97</p>
+        <p>R. Antônio Silvestre, 03 — Bloco 04, Apt 63</p>
+        <p>Parque das Cerejeiras — Presidente Prudente/SP — CEP 19.061-330</p>
+        <p>contato@dietchat.com.br</p>
+      </div>
+    </div>
+    <div>
+      <h6 class="font-headline font-bold text-sm mb-6 uppercase tracking-widest text-emerald-800">Navegação</h6>
+      <ul class="space-y-4 text-xs leading-relaxed">
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="#como-funciona">Como Funciona</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="#recursos">Recursos</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="#consentimento">Consentimento</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="font-headline font-bold text-sm mb-6 uppercase tracking-widest text-emerald-800">Legal</h6>
+      <ul class="space-y-4 text-xs leading-relaxed">
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="privacy.html">Política de Privacidade</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="terms.html">Termos de Serviço</a></li>
+        <li><a class="text-slate-500 hover:text-emerald-600 transition-colors" href="deletion.html">Exclusão de Dados</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-xs text-slate-400">© 2025 Sanchez Store Ltda — ChatDiet. Todos os direitos reservados.</p>
+    <p class="text-xs text-slate-400">O ChatDiet é um serviço de educação alimentar e não constitui aconselhamento médico ou nutricional clínico.</p>
+  </div>
+</footer>
+
+</body>
+</html>
